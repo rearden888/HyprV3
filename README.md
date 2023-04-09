@@ -1,7 +1,7 @@
 # HyprV3
 An modified improved Hyprland deployment
 
-## Changes to the upstream:
+## Changes to the upstream NOT READY FOR USE - STILL IN MODIFICATION:
 - Changed install script to use paru vice yay
 - Turned echo on for install script
 - Modified some of the config files to my own preference (waybar on the bottom for instance)
