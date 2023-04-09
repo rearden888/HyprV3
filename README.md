@@ -1,5 +1,11 @@
-# HyprV2
-An improved Hyprland deployment
+# HyprV3
+An modified improved Hyprland deployment
+
+## Changes to the upstream:
+- Changed install script to use paru vice yay
+- Turned echo on for install script
+- Modified some of the config files to my own preference (waybar on the bottom for instance)
+- rofi over wofi as that is my preference
 
 collection of dot config files for hyprland with a simple install script for a fresh Arch linux with yay
 
