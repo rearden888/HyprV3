@@ -139,7 +139,7 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
 
     #Stage 2
     echo -e "\n$CNT - Stage 2 - Installing additional tools and utilities, this may take a while..."
-    for SOFTWR in polkit-gnome python-requests pamixer pavucontrol brightnessctl bluez bluez-utils blueman network-manager-applet gvfs thunar-archive-plugin file-roller btop pacman-contrib exa bat zsh oh-my-zsh-git
+    for SOFTWR in polkit-gnome python-requests pamixer pavucontrol brightnessctl bluez bluez-utils blueman network-manager-applet gvfs thunar-archive-plugin file-roller btop pacman-contrib exa zsh oh-my-zsh-git bat rofi-lbonn-wayland-git
     do
         #First lets see if the package is there
         if paru -Qs $SOFTWR > /dev/null ; then
@@ -187,7 +187,7 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     
     # Clean out other portals
     echo -e "$CNT - Cleaning out conflicting xdg portals..."
-    yay -R --noconfirm xdg-desktop-portal-gnome xdg-desktop-portal-gtk &>> $INSTLOG
+    paru -R --noconfirm xdg-desktop-portal-gnome xdg-desktop-portal-gtk &>> $INSTLOG
 fi
 
 ### Copy Config Files ###
